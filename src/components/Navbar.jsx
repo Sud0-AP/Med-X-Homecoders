@@ -11,6 +11,7 @@ function Navbar() {
       <div className="right">
         <button className="about_us">About Us</button>
         <button className="Register">Doctors</button>
+        <button className="appointments">Appointments</button>
         <button className="connect_wallet">Connect Wallet <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png" className="wallet_pic" alt="" /></button>
       </div>
     </div>

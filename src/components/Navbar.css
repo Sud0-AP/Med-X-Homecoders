@@ -53,12 +53,12 @@ button {
   /* line-height: 2.5em; */
   margin: 10px;
   position: relative;
-  overflow: hidden;
+  overflow:hidden;
   border: 2px solid var(--color);
   transition: color 0.5s;
   z-index: 1;
   font-size: 17px;
-  border-radius: 61px;
+  border-radius: 35px;
   font-weight: 500;
   color: var(--color);
   background-color: #fff;
@@ -73,14 +73,16 @@ button:before {
   position: absolute;
   z-index: -1;
   background: var(--color);
-  height: 150px;
+  height: 250px;
   width: 450px;
-  border-radius: 50%;
+  border-radius: 35%;
 }
 
 button:hover {
   color: #fff;
   transform: scale(1.1);
+  background-color: var(--color);
+  transition: all 0.5s;
 }
 
 button:before {

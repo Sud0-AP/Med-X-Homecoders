@@ -12,7 +12,7 @@
 
 .bg_img {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .content {
@@ -45,7 +45,7 @@ button.appointment {
 button.appointment:before {
   height: 110px;
   width: 800px;
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 
 .slogan_para {
@@ -96,6 +96,7 @@ h1.quality_head {
   font-size: 1.3rem;
 }
 
-u{
-    
+hr{
+  border-top:2px solid rgb(255, 255, 255);
+  border-radius: 50%;
 }

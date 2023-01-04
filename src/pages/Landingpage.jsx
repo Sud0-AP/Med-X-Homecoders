@@ -22,23 +22,22 @@ function Landingpage() {
           </div>
           <div className="quality">
             <div className="leftquality">
-              <u>
                 <h1 className="quality_head">
                   24x7
                   <h2>available</h2>
                 </h1>
-              </u>
+                <hr />
               <p className="quality_para">
                 We are available 24x7 for your service. Book an appointment now
               </p>
             </div>
             <div className="rightquality">
-              <u>
+
                 <h1 className="quality_head">
                   Best
                   <h2>Doctors</h2>
                 </h1>
-              </u>
+                <hr />
               <p className="quality_para">
                 We ensure you that you will be treated by best doctors of the
                 world
