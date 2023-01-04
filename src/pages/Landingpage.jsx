@@ -15,8 +15,7 @@ function Landingpage() {
             <h1 className="head">Welcome To Med-X .</h1>
             <h1 className="head">This Is A Slogan</h1>
             <p className="slogan_para">
-              Record quick videos to update your team and cut down meetings by
-              29%
+              "Welcome to med-X Hospital, a decentralized healthcare facility dedicated to providing high-quality, patient-centered care to our community.
             </p>
             <button className="appointment">Book An Appointment Now</button>
           </div>
@@ -28,11 +27,10 @@ function Landingpage() {
                 </h1>
                 <hr />
               <p className="quality_para">
-                We are available 24x7 for your service. Book an appointment now
+                We are available 24x7 for your service. Book an appointment now at Med-x now.
               </p>
             </div>
             <div className="rightquality">
-
                 <h1 className="quality_head">
                   Best
                   <h2>Doctors</h2>
