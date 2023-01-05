@@ -5,8 +5,7 @@ function Navbar() {
   return (
     <div className="Navbar">
       <div className="left">
-        <img className="logo" src="./image 2.png" alt="" />
-        <h1 className="medx">Med-X</h1>
+        <img className="logo" src="./Med-x-1 1.png" alt="" />
       </div>
       <div className="right">
         <button className="about_us">About Us</button>
