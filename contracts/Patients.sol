@@ -59,4 +59,23 @@ contract Patients {
     {
         return patients[_patientAddr].mobNo;
     }
+
+    function delUser(address _patientAddr) public {
+        /* function to delete profile */
+        delete patients[_patientAddr];
+    }
+
+    function updateUser(
+        /* function to update the profile */
+        address _patientAddr,
+        string memory _patientName,
+        uint256 _age,
+        uint256 _height,
+        string memory _mobNo
+    ) public {
+        patients[_patientAddr].patientName = _patientName;
+        patients[_patientAddr].age = _age;
+        patients[_patientAddr].height = _height;
+        patients[_patientAddr].mobNo = _mobNo;
+    }
 }
