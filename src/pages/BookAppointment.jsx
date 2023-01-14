@@ -3,13 +3,11 @@ import MailIcon from "@mui/icons-material/Mail";
 import PhoneIcon from "@mui/icons-material/Phone";
 import DateCard from "../components/DateCard";
 import TimeCard from "../components/TimeCard";
-import Navbar from "../components/Navbar";
 import "./BookAppointment.css";
 
 function BookAppointment() {
   return (
     <>
-      <Navbar />
       <div className="BookAppointment">
         <div className="left_content">
           <div className="doctor_image">
