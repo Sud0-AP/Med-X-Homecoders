@@ -1,8 +1,14 @@
 import React from "react";
 import "./UserProfile.css";
 import { Link } from "react-router-dom";
+import { ethers } from 'ethers';
 
-function UserProfile() {
+function UserProfile({account,setAccount}) {
+  const connectHandler = async()=>{
+    const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+    const account = ethers.utils.getAddress(accounts[0])
+        setAccount(account);
+  }
   return (
     <div className="User_profile">
       <div className="profile_nav">
@@ -36,7 +42,14 @@ function UserProfile() {
         </div>
         <div className="right_content">
           <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=2000" alt="" />
-          <button>Address</button>
+          {account ?(
+            <button>
+              {account.slice(0, 6) + '...' + account.slice(38, 42)}{" "}
+            </button>
+          ):(
+            <button onClick={connectHandler}>Connect Wallet</button>
+          )}
+          {/* <button>Address</button> */}
         </div>
       </div>
       <div className="appointment">

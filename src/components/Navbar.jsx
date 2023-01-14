@@ -1,8 +1,16 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { ethers } from 'ethers';
 
-function Navbar() {
+const Navbar = ({account,setAccount})=> {
+
+  const connectHandler = async()=>{
+    const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+    const account = ethers.utils.getAddress(accounts[0])
+    setAccount(account);
+  }
+
   return (
     <div className="Navbar">
       <div className="left">
@@ -20,7 +28,20 @@ function Navbar() {
         <Link to="/appointments">
           <button className="appointments">Appointments</button>
         </Link>
-        <button className="connect_wallet">
+
+        {account ?(
+          <button className="connect_wallet">
+            {account.slice(0, 6) + '...' + account.slice(38, 42)}{" "}
+            <Link to="/userprofile">
+            <img
+              src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=2000"
+              className="wallet_pic"
+              alt=""
+            />
+          </Link>
+          </button>
+        ):(
+          <button className="connect_wallet" onClick={connectHandler}>
           Connect Wallet{" "}
           <Link to="/userprofile">
             <img
@@ -30,6 +51,7 @@ function Navbar() {
             />
           </Link>
         </button>
+        )}
       </div>
     </div>
   );
