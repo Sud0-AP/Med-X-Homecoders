@@ -25,7 +25,7 @@ h1.medx {
 }
 
 .right {
-  width: 50%;
+  width: 55%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,6 +63,7 @@ button {
   font-weight: 500;
   color: var(--color);
   background-color: #fff;
+  min-width: fit-content;
 }
 
 button.connect_wallet{
