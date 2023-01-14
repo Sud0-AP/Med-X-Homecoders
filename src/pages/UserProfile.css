@@ -1,0 +1,112 @@
+.User_profile{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 35%;
+    height: fit-content;
+  
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    background-color: #ACD8E1;
+    border: 3px solid #004F59;
+}
+
+.right_content img{
+    border: 3px solid #004F59;
+    border-radius: 100%;
+}
+
+.profile_nav{
+    width: 100%;
+    padding-right: 25%;
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.left_content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding-left: 1rem;
+}
+
+.profile_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ACD8E1;
+}
+
+.profile_entry{
+    display: flex;
+    align-items: center;
+}
+
+.right_content{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+
+.appointment{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    background-color: #ACD8E1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.edit_profile{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 1rem;
+    background-color: #ACD8E1;
+    padding-bottom: 0.5rem;
+}
+
+.entry_head{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.User_profile h2, .entry_head{
+    color: #004F59;
+}
+
+.User_profile .entry_detail{
+    color: #177480;
+}
+
+.previous_appointments{
+    background-color: #004F59;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 20px;
+}
+
+.pending_appointments{
+    background-color: #004F59;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 20px;
+}
+
+.previous_appointments_head{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.pending_appointments_head{
+    font-size: 1.1rem;
+    font-weight: 500;
+}

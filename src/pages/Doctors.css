@@ -1,0 +1,23 @@
+.doctors .doctor_cards_content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.doctors .doctors_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.doctors .doctors_header h1 {
+  color: #177480;
+}
+
+.doctors {
+  background-color: #acd8e1;
+}
