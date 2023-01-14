@@ -63,6 +63,7 @@ button {
   font-weight: 500;
   color: var(--color);
   background-color: #fff;
+  min-width: fit-content;
 }
 
 button.connect_wallet{
