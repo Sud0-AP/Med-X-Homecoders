@@ -1,11 +1,14 @@
 import React from "react";
 import "./UserProfile.css";
+import { Link } from "react-router-dom";
 
 function UserProfile() {
   return (
     <div className="User_profile">
       <div className="profile_nav">
-        <button>back</button>
+        <Link to="/">
+          <button>Back</button>
+        </Link>
         <h2>USER PROFILE</h2>
       </div>
       <div className="profile_content">
@@ -32,7 +35,7 @@ function UserProfile() {
           </div>
         </div>
         <div className="right_content">
-          <img src="./image 2.png" alt="" />
+          <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=2000" alt="" />
           <button>Address</button>
         </div>
       </div>
