@@ -6,6 +6,10 @@
   background-color: #acd8e1;
 }
 
+.Landingpage h2{
+  color: white;
+}
+
 .leftcontent {
   width: 60%;
 }
@@ -32,7 +36,7 @@
 .head {
   font-size: 4rem;
   font-weight: bolder;
-  color: #004f59;
+  color: #05535e;
 }
 
 button.appointment {
@@ -40,6 +44,10 @@ button.appointment {
   width: 80%;
   height: 15rem;
   margin-left: 0.25rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 0;
 }
 
 button.appointment:before {
@@ -98,4 +106,64 @@ h1.quality_head {
 
 hr{
   border-top:2px solid rgb(255, 255, 255);
+}
+
+.Landingpage button {
+  /* display: flex;
+  align-items: center; */
+
+--color: #004F59;
+text-align: center;
+font-family: inherit;
+display: inline-block;
+width: auto;
+padding-left: 1.7rem;
+padding-right: 1.7rem;
+height: 2.6em;
+/* line-height: 2.5em; */
+margin: 10px;
+position: relative;
+overflow:hidden;
+border: 2px solid var(--color);
+transition: color 0.5s;
+z-index: 1;
+font-size: 17px;
+border-radius: 35px;
+font-weight: 500;
+color: var(--color);
+background-color: #fff;
+min-width: fit-content;
+}
+
+.Landingpage button:before {
+content: "";
+position: absolute;
+z-index: -1;
+background: var(--color);
+height: 250px;
+width: 450px;
+border-radius: 35%;
+}
+
+.Landingpage button:hover {
+color: #fff;
+transform: scale(1.1);
+background-color: var(--color);
+transition: all 0.5s;
+}
+
+.Landingpage button:before {
+top: 100%;
+left: 100%;
+transition: all 0.5s;
+}
+
+.Landingpage button:hover:before {
+top: -30px;
+left: -30px;
+}
+
+.Landingpage button:active:before {
+background: #004F59;
+transition: background 0s;
 }
