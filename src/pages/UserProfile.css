@@ -14,12 +14,14 @@
     border: 3px solid #004F59;
 }
 
-.right_content img{
+.User_profile .right_content img{
     border: 3px solid #004F59;
     border-radius: 100%;
+    height: 10rem;
+    width: 10rem;
 }
 
-.profile_nav{
+.User_profile .profile_nav{
     width: 100%;
     padding-right: 25%;
     padding-top: 0.5rem;
@@ -29,7 +31,7 @@
     background-color: white;
 }
 
-.left_content{
+.User_profile .left_content{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -37,19 +39,19 @@
     padding-left: 1rem;
 }
 
-.profile_content{
+.User_profile .profile_content{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #ACD8E1;
 }
 
-.profile_entry{
+.User_profile .profile_entry{
     display: flex;
     align-items: center;
 }
 
-.right_content{
+.User_profile .right_content{
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -57,7 +59,7 @@
     padding-right: 2rem;
 }
 
-.appointment{
+.User_profile .appointment{
     display: flex;
     justify-content: space-around;
     padding-top: 1rem;
@@ -66,7 +68,7 @@
     padding-right: 1rem;
 }
 
-.edit_profile{
+.User_profile .edit_profile{
     display: flex;
     flex-direction: row-reverse;
     padding-top: 1rem;
@@ -74,7 +76,7 @@
     padding-bottom: 0.5rem;
 }
 
-.entry_head{
+.User_profile .entry_head{
     font-size: 1.3rem;
     font-weight: 500;
 }
@@ -110,3 +112,64 @@
     font-size: 1.1rem;
     font-weight: 500;
 }
+
+.User_profile button {
+    /* display: flex;
+    align-items: center; */
+  
+  --color: #004F59;
+  text-align: center;
+  font-family: inherit;
+  display: inline-block;
+  width: auto;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  height: 2.6em;
+  /* line-height: 2.5em; */
+  margin: 10px;
+  position: relative;
+  overflow:hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 35px;
+  font-weight: 500;
+  color: var(--color);
+  background-color: #fff;
+  min-width: fit-content;
+  }
+  
+  .User_profile button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 250px;
+  width: 450px;
+  border-radius: 35%;
+  }
+  
+  .User_profile button:hover {
+  color: #fff;
+  transform: scale(1.1);
+  background-color: var(--color);
+  transition: all 0.5s;
+  }
+  
+  .User_profile button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.5s;
+  }
+  
+  .User_profile button:hover:before {
+  top: -30px;
+  left: -30px;
+  }
+  
+  .User_profile button:active:before {
+  background: #004F59;
+  transition: background 0s;
+  }
+  
