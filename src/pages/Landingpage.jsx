@@ -1,11 +1,9 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import "./Landingpage.css";
 
 function Landingpage() {
   return (
     <div className="Landingpage">
-      <Navbar />
       <div className="content">
         <div className="leftcontent">
           <img className="bg_img" alt="" src={require("./cropped2.png")} />
