@@ -9,7 +9,6 @@ import Appointments from './pages/Appointments';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
-import config from "./config.json";
 import appointments from './abis/Appointments.json';
 import patients from './abis/Patients.json';
 
@@ -18,6 +17,8 @@ function App() {
 
   const [provider,setProvider] = useState(null)
   const [account, setAccount] = useState(null)
+  const [AppointmentsContract, setAppointments] = useState(null)
+  const [PatientsContract, setPatients] = useState(null)
 
   const loadBlockchainData = async()=>{
     const provider = new ethers.providers.Web3Provider(window.ethereum)
@@ -25,17 +26,19 @@ function App() {
 
     const network = await provider.getNetwork()
 
-    const Appointments = new ethers.Contract(
-      config[network.chainId].Appointments.address(),
-      appointments, 
+    const AppointmentsContract = new ethers.Contract(
+      "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+      appointments,
       provider
     );
+    setAppointments(AppointmentsContract)
 
-    const Patients = new ethers.Contract(
-      config[network.chainId].Patients.address(),
+    const PatientsContract = new ethers.Contract(
+      "0x5fbdb2315678afecb367f032d93f642f64180aa3",
       patients,
       provider
     ); 
+    setPatients(PatientsContract)
 
     window.ethereum.on("accountsChanged", async () => {
       const accounts = await window.ethereum.request({
@@ -57,7 +60,7 @@ function App() {
         <Navbar account={account} setAccount={setAccount} />
         <Routes>
           <Route path="/" element={<Landingpage />} />
-          <Route path="doctors" element={<Doctors />} />
+          <Route path="doctors" element={<Doctors provider={provider} AppointmentsContract={AppointmentsContract} PatientsContract={PatientsContract}/>} />
           <Route path="aboutus" element={<AboutUs />} />
           <Route
             path="userprofile"

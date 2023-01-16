@@ -25,7 +25,7 @@ async function main() {
             tokens(1)
         )
     await AddDoc.wait()
-    console.log('Added doc 1');
+    console.log(`Added doc 1${doc1.address}`);
 
     AddDoc = await appointments
         .connect(doc2)
