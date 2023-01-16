@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
 import ImageCard from "../components/ImageCard";
+import { Link } from "react-router-dom";
 
 function AboutUs() {
   return (
@@ -18,7 +19,7 @@ function AboutUs() {
             we serve by providing compassionate, innovative, and evidence-based
             care.”
           </p>
-          <button>Book An Appointment Now</button>
+          <Link to="/doctors"><button>Book An Appointment Now</button></Link>
           <h2>Our Team</h2>
           <div className="team_images">
             <ImageCard name="Sameer Madhav D" image="/profile_images/sameer.jfif"/>
