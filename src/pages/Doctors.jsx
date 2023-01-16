@@ -51,6 +51,8 @@ function Doctors(AppointmentsContract, PatientsContract) {
             img="https://st.depositphotos.com/1518767/4292/i/600/depositphotos_42920323-stock-photo-portrait-of-a-confident-male.jpg"
           />
         </Link>
+      </div>
+      <div className="doctor_cards_content2">
         <Link to="/bookappointment4">
           <DoctorCard
             name="Dr. Vineesh Rao"
