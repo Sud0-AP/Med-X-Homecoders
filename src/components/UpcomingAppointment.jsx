@@ -1,17 +1,17 @@
 import React from 'react'
 import "./UpcomingAppointment.css"
 
-function UpcomingAppointment() {
+function UpcomingAppointment(props) {
   return (
     <div className="upcoming_appointments">
         <div className="left_content">
-            <p className="name">Tushar Sharma</p>
-            <p className="specialization">Cardiologist</p>
-            <p className="distance">📍 1.5 km away</p>
+            <p className="name">{props.name}</p>
+            <p className="specialization">{props.spec}</p>
+            <p className="distance">📍 {props.dist} km away</p>
         </div>
         <div className="right_content">
-            <p className="date">12 Dec</p>
-            <p className="time">9:30 AM</p>
+            <p className="date">{props.date} Dec</p>
+            <p className="time">{props.time} AM</p>
         </div>
     </div>
   )
