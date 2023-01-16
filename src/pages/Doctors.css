@@ -2,6 +2,15 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.doctors .doctor_cards_content2 {
+  padding-top: 3rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .doctors .doctors_header {
