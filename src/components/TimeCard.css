@@ -9,6 +9,10 @@
     border-radius: 15px;
 }
 
+.time_card:hover{
+    background-color: #13707c;
+}
+
 .time_card p{
     font-size: 1.25rem;
     color: white;
