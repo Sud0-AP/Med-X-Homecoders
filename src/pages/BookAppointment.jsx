@@ -5,24 +5,24 @@ import DateCard from "../components/DateCard";
 import TimeCard from "../components/TimeCard";
 import "./BookAppointment.css";
 
-function BookAppointment() {
+function BookAppointment(props) {
   return (
     <>
       <div className="BookAppointment">
         <div className="left_content">
           <div className="doctor_image">
-            <img src="https://myupchar-banner.s3.ap-south-1.amazonaws.com/widget/avatar/doctor-avatar-male.png" alt="" />
+            <img src={props.img} alt="" />
           </div>
           <div className="doctor_details">
-            <p className="name">Tushar Sharma</p>
-            <p className="specialization">Cardiologist</p>
+            <p className="name">{props.name}</p>
+            <p className="specialization">{props.spec}</p>
             <div className="contact_buttons">
               <PhoneIcon />
               <MailIcon />
             </div>
             <div className="doctor_more_info">
-              <p className="location">📍 1.5 km away</p>
-              <p className="doctor_rating">⭐ 4.2</p>
+              <p className="location">📍 {props.dist} km away</p>
+              <p className="doctor_rating">⭐ {props.rate}</p>
             </div>
           </div>
         </div>
@@ -31,26 +31,26 @@ function BookAppointment() {
           <div className="description">
             <p className="description_title">Description</p>
             <p className="description_content">
-              Cardiologist hu bhai thodi to izzat banti hai
+              The best {props.spec} in city.
             </p>
           </div>
           <div className="select_date">
             <p className="select_date_title">Select Date</p>
             <div className="date_cards">
-              <DateCard />
-              <DateCard />
-              <DateCard />
-              <DateCard />
-              <DateCard />
+              <DateCard date="20"/>
+              <DateCard date="21"/>
+              <DateCard date="22"/>
+              <DateCard date="23"/>
+              <DateCard date="24"/>
             </div>
           </div>
           <div className="select_time">
             <p className="select_time_title">Select Time</p>
             <div className="time_cards">
-              <TimeCard />
-              <TimeCard />
-              <TimeCard />
-              <TimeCard />
+              <TimeCard time="09:00"/>
+              <TimeCard time="09:15"/>
+              <TimeCard time="09:30"/>
+              <TimeCard time="09:45"/>
             </div>
           </div>
           <button>Book Appointment Now</button>
