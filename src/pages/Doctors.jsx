@@ -48,7 +48,7 @@ function Doctors(AppointmentsContract, PatientsContract) {
             spec="Orthopedic Surgeon"
             dist="3.9"
             rate="3.7"
-            img="https://live.staticflickr.com/3939/15713020582_b83c08d41c_z.jpg"
+            img="https://st.depositphotos.com/1518767/4292/i/600/depositphotos_42920323-stock-photo-portrait-of-a-confident-male.jpg"
           />
         </Link>
         <Link to="/bookappointment4">
