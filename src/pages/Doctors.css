@@ -1,8 +1,7 @@
 .doctors .doctor_cards_content {
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .doctors .doctors_header {
