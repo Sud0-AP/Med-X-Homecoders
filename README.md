@@ -2,7 +2,7 @@
 
 A decentralized healthcare facility dedicated to providing high-quality, patient-centered care to our community.
 
-Project submission for OctaHacks 5.0
+Project submission for OctaHacks 5.0.
 
 ## Video Link:
 https://youtu.be/lY3tYD036NQ
